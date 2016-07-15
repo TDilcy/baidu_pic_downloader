@@ -14,11 +14,11 @@ def get_images(url):
         #取回本地
         count += 1
 
-url = input('secondpage of a post：')
-#输入帖子第二页网址(网址需在英文引号内)
+url = str(input('secondpage of a post：'))
+#输入帖子第二页网址
 pages = input("numbers of pages you wanna crawl(no more than total num：")
 #会抓取你所输入的页数减1个页面
-loc = input("a folder for saving pics：")
+loc = str(input("a folder for saving pics："))
 #输入保存文件夹的绝对路径
 print 'homepage：', url
 print 'numbers：', pages
